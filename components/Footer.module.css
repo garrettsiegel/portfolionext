@@ -1,0 +1,35 @@
+.footermain {
+    background-color: #fff;
+    color: #242424;
+    padding: 1.5em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: .25px solid #242424;
+}
+
+.footercontainer {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footercontainer p {
+    font-weight: 300;
+    font-size: .75rem;
+}
+
+.footerleft a{
+    margin-right: 3em;
+}
+
+.footerright {
+    display: flex;
+    align-items: center;
+}
+
+.footerright a, .footerright p {
+    margin-left: 3em;
+}
