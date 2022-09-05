@@ -106,6 +106,7 @@ export default function Home() {
 
           <h4>CMS</h4>
           <div className="ui gray labels">
+            <a className="ui label">Headless Contentful</a>
             <a className="ui label">WordPress</a>
             <a className="ui label">WebFlow</a>
           </div>
