@@ -20,7 +20,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="ui inverted secondary menu">
-                        <Link href="/"><a className="active item">Home</a></Link>
+                        <Link href="/"><a className="item">Home</a></Link>
                         <Link href="/work"><a className="item">Work</a></Link>
                         <Link href="/"><a className="item">Case Studies</a></Link>
                         <Link href="/"><a>
