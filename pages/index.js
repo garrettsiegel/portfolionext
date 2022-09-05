@@ -18,11 +18,11 @@ export default function Home() {
 
         </div>
         <div className={styles.left1text}>
-        <p>I’m an ambitious Front End Developer with years of industry experience working with Web Development, and Graphic, Motion, and 3D Design.</p>
+        <p>I am an ambitious Front End Developer with years of industry experience working with Web Development, and Graphic, Motion, and 3D Design.</p>
 
         <p>I have a clean, scientific, and contemporary approach to design, a passion for aesthetically pleasing user interfaces, and I work with a wide range of programming languages and technologies.</p>
 
-        <p>I’ve worked on many different development and design projects, in corporate and agency settings, as well as many years of freelance work and am skilled in managing projects, client needs, and solving problems, with a huge focus on effective communication.</p>
+        <p>I have worked on many different development and design projects, in corporate and agency settings, as well as many years of freelance work and am skilled in managing projects, client needs, and solving problems, with a huge focus on effective communication.</p>
 
         <p>Please check out the rest of my site, my work, and a list of my current tech competencies below. Feel free to reach out any time, my email is: 
           <Link href="mailto:garrett@submurgedcreative.com"><a> garrett@submurgedcreative.com</a></Link>
@@ -31,7 +31,7 @@ export default function Home() {
         
       </div>
 
-      
+
       <div className={styles.right1}>
 
         <div className={styles.techstack1}>
@@ -47,7 +47,7 @@ export default function Home() {
 
         <div className={styles.proservices}>
         <h3>Professional Services</h3>
-        <p>I'm experienced in providing the following professional services:</p>
+        <p>I am experienced in providing the following professional services:</p>
         <div className="ui teal labels">
             <a className="ui label">Dynamic Website Design</a>
             <a className="ui label">Landing Page Builds</a>
