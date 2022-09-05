@@ -11,7 +11,7 @@ const Navbar = () => {
                     <div className="nav-title">
                         <div className="ui horizontal list">
                             <div className="item">
-                                <Image className="ui mini circular image" src={"/garrett-siegel.jpg"} width={200} height={200} alt={''}/>
+                                <img className="ui mini circular image" src={"/garrett-siegel.jpg"} width={200} height={200} alt={''}/>
                                 <div className="content">
                                     <span className="navspan">Garrett Siegel </span> <span className="navspan2">| Front End Developer</span>
                                 </div>
@@ -32,7 +32,7 @@ const Navbar = () => {
                     
                 </div>
             </div>
-            
+
         </div>    
      );
 }
