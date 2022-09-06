@@ -1,41 +1,28 @@
 import Link from "next/link";
 import Image from "next/image";
+import styles from '/components/Navbar.module.css'
 
-const Navbar = () => {
+export default function Navbar() {
     return ( 
-        <div className="nav-container">
-            
-            <div className="ui inverted segment">
-                <div className="nav-flex">
-
-                    <div className="nav-title">
-                        <div className="ui horizontal list">
-                            
-                            <div className="item">
-                                <img className="ui mini circular image" src={"/garrett-siegel.jpg"} width={200} height={200} alt={''}/>
-                                <div className="content">
-                                    <span className="navspan">Garrett Siegel </span> <span className="navspan2">| Front End Developer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="ui inverted secondary menu">
-                        <Link href="/"><a className="item">Home</a></Link>
-                        <Link href="/work"><a className="item">WebDev Work</a></Link>
-                        {/* <Link href="/"><a className="item">Case Studies</a></Link> */}
-                        <Link href="/"><a>
-                            <button className="ui orange button">
-                                Log In
-                            </button>
-                        </a></Link>
-                    </div>
-                    
+        <nav>
+            <div className={styles.navcontainer}>
+                
+                <div className={styles.navleft}>
+                    <Link href="/"><a>
+                        <Image className={styles.navimage} src={"/garrett-siegel.jpg"} width={40} height={40} alt={''} layout="fixed"></Image>
+                    </a></Link>
+                    <Link href="/"><a>
+                        <h3>Garrett Siegel <span>| Front End Developer</span></h3>
+                    </a></Link>
                 </div>
+                <div className={styles.navright}>
+                    <Link href="/"><a className={styles.navlink}>Home</a></Link>
+                    <Link href="/work"><a className={styles.navlink}>WebDev Work</a></Link>
+                    <Link href="/"><a><button className={styles.navbutton}>Log In</button></a></Link>
+                </div>       
             </div>
-
-        </div>    
+        </nav>
+             
      );
 }
  
-export default Navbar;

@@ -1,43 +1,46 @@
 import Image from "next/image"
-import Link from "next/link"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import styles from '/components/ProjectCard.module.css'
 
 export default function ProjectCard({ project }) {
     const { title, meta, image, technology, description, link } = project.fields
 
   return (
-    
+    <div className={styles.card}>
+        <div className={styles.cardwrapper}>
 
-        
-    
-    <div className="ui link cards">
-        <div className="card">
-            <div className="image">
-                <Image src={'https:' + image.fields.file.url} alt={''} width={image.fields.file.details.image.width} height={image.fields.file.details.image.height} />
+            <div className={styles.cardmain}>
+                <div className={styles.cardimage}>
+                    <Image src={'https:' + image.fields.file.url} alt={''} width={image.fields.file.details.image.width} height={image.fields.file.details.image.height} />
+                </div>
+
+                <div className={styles.cardcontent}>
+
+                    <div className={styles.cardheader}>
+                        <h3>{title}</h3>
+                    </div>
+
+                    <div className={styles.cardmeta}>
+                        <span>{meta}</span>
+                    </div>
+
+                    <div className={styles.cardtech}>
+                        {technology.map(tech => ( 
+                            // eslint-disable-next-line react/no-unknown-property
+                            <a key={tech}>{tech}</a>
+                        ))}
+                    </div>
+                    <div className={styles.carddescription}>
+                        {documentToReactComponents(description)}
+                    </div>
+                </div>
             </div>
-            <div className="content">
-                <div className="header">{ title }</div>
-                <div className="meta">
-                    <span className="date">{meta}</span>
-                </div>
-                <div className="meta">
-                    {technology.map(tech => ( 
-                        // eslint-disable-next-line react/no-unknown-property
-                        <a key={tech} className="ui label">{tech}</a>
-                    ))}
-                </div>
-                <div className="description">
-                    {documentToReactComponents(description)}
-                </div>
-            </div>
-            <div className="extra content">
-                <span className="right floated">
+
+            <div className={styles.cardbottom}>
                     {documentToReactComponents(link)}
-                </span>
             </div>
+
         </div>
-        </div>
-        
-  
+    </div>
   )
 }

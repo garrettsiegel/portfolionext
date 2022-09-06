@@ -1,0 +1,58 @@
+.card {
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.cardimage img {
+    border-radius: 5px 5px 0 0;
+    
+}
+
+.cardcontent {
+    padding: 1em 2em;
+}
+
+.cardmeta {
+    color: #3A86FF;
+    font-size: .85rem
+}
+
+.cardtech a {
+    font-size: .75rem;
+    background: lightgray;
+    border-radius: 2.5px;
+    padding: .25em .5em;
+    margin-right: .25em;
+    display: inline-block;
+    margin-top: .25em;
+}
+
+.cardtech {
+    margin-bottom: 1em;
+}
+
+.carddescription {
+    font-weight: 500;
+    font-size: .9rem;
+    line-height: 1.5;
+}
+
+.cardbottom {
+    padding: 0 2em;
+    text-align: right;
+    margin-bottom: 1.5em;
+}
+
+.cardbottom a {
+    background-color: #EF931A;
+    padding: .5em 1em;
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.cardbottom a:hover {
+    background-color: #BF720D;
+    color: lightgray;
+}

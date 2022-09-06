@@ -35,7 +35,7 @@ export default function work({ projects }) {
 
         
        </Masonry>
-       
+       <div className="footerblockout"></div> 
     </div>
   )
 }

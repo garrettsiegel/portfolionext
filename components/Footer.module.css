@@ -1,15 +1,16 @@
 .footermain {
     background-color: #fff;
     color: #242424;
-    padding: 1.5em 0;
+    padding: .5em 0;
     position: fixed;
     bottom: 0;
     width: 100%;
-    border-top: .25px solid #242424;
+    border-top: 1px solid lightgray;
 }
 
 .footercontainer {
-    width: 80%;
+    width: 95%;
+    padding: 0 .5em;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -21,8 +22,19 @@
     font-size: .75rem;
 }
 
+.footerleft {
+    display: flex;
+}
+
+.footerleft span {
+    margin-left: .5em;
+    font-size: .9rem;
+}
+
 .footerleft a{
     margin-right: 3em;
+    color: #242424;
+    text-decoration: none;
 }
 
 .footerright {
@@ -31,5 +43,11 @@
 }
 
 .footerright a, .footerright p {
-    margin-left: 3em;
+    margin-left: 2em;
 }
+
+.footerleftflex {
+    display: flex;
+    align-items: center;
+}
+
