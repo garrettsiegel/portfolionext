@@ -29,7 +29,7 @@ export default function Home() {
             <h3>Current Full-Time Tech Stack</h3>
             <div className={styles.labeldiv}>
               <a>Next.JS</a>
-              <a>Headless Magento 2</a>
+              <a>Headless CMS</a>
               <a>Jira</a>
               <a>Slack</a>
             </div>
@@ -95,7 +95,6 @@ export default function Home() {
 
             <h4>CMS</h4>
             <div className={styles.labeldivalt2}>
-              <a>Headless Contentful</a>
               <a>WordPress</a>
               <a>WebFlow</a>
             </div>
