@@ -122,7 +122,6 @@ export default function Home() {
             <div className={styles.labeldivalt2}>
               <a>Agile Methodologies</a>
               <a>Basecamp</a>
-              <a>Slack</a>
             </div>
 
             <h4>Miscellaneous</h4>
