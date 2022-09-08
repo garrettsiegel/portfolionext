@@ -18,7 +18,7 @@ export default function Navbar() {
                 <div className={styles.navright}>
                     <Link href="/"><a className={styles.navlink}>Home</a></Link>
                     <Link href="/work"><a className={styles.navlink}>WebDev Work</a></Link>
-                    <Link href="/"><a><button className={styles.navbutton}>Log In</button></a></Link>
+                    {/* <Link href="/"><a><button className={styles.navbutton}>Log In</button></a></Link> */}
                 </div>       
             </div>
         </nav>
