@@ -12,14 +12,14 @@ export default function Home() {
           <div className={styles.imageblock}>
             <Image src="/garrett-siegel.jpg" className={styles.avatar} width={250} height={250} layout={"intrinsic"} alt={''}/>
           </div>
-          <div className={styles.toptext}>
+          {/* <div className={styles.toptext}>
             <p>I am an ambitious Front End Developer with years of industry experience working with Web Development, and Graphic, Motion, and 3D Design.</p>
             <p>I have a clean, scientific, and contemporary approach to design, a passion for aesthetically pleasing user interfaces, and I work with a wide range of programming languages and technologies.</p>
             <p>I have worked on many different development and design projects, in corporate and agency settings, as well as many years of freelance work and am skilled in managing projects, client needs, and solving problems, with a huge focus on effective communication.</p>
             <p>Please check out the rest of my site, my work, and a list of my current tech competencies below. Feel free to reach out any time, my email is:&nbsp;
               <Link href="mailto:garrett@submurgedcreative.com"><a>garrett@submurgedcreative.com</a></Link>
             </p>
-          </div>
+          </div> */}
         </div>
 
 
